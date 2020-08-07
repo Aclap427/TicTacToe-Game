@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    justify-content: center;
+    background-color: lavenderblush;
+}
+
+h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 6em;
+    padding-bottom: 10px;
+    text-align: center;
+    margin: auto;
+}
+
+h4 {
+    text-align: center;
+    position: relative;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2em;
+    color: #ffb3b3;
+    padding-bottom: 10px;
+}
+
+.status-action {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.5em;
+    position: relative;
+    margin: auto;
+    text-align: center;
+    color: #ffb3b3;
+}
+
+.container {
+    display: flex;
+    background: lavenderblush;
+    border-radius: 25px;
+    padding: 100px;
+    justify-content: center;
+    ;
+}
+
+.game-grid {
+    background: black;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.game-cell {
+    background: #f8f8ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 50px;
+}
+
+.reset {
+    width: 200px;
+    position: relative;
+    bottom: 10px;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #ff6666;
+    border: solid medium black;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.reset:hover {
+    border: 4px solid #b30000;
+    transform: scale(1.1);
+}
+
+.x::after {
+    content: url(https://i.imgur.com/TfpgMI1t.png?2);
+}
+
+.o::after {
+    content: url(https://i.imgur.com/A1eWiivt.jpg?1);
+}
+
+@media only screen and (min-width: 550px) {
+    .game-grid {
+        margin: 25px;
+        grid-gap: 10px;
+    }
+    .game-cell {
+        height: 200px;
+        width: 200px;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    .game-grid {
+        margin: 25px;
+        grid-gap: 10px;
+    }
+    .game-cell {
+        height: 200px;
+        width: 200px;
+        padding: 100px;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .game-cell {
+        height: 100px;
+        width: 100px;
+    }
+    .x::after {
+        content: url(https://i.imgur.com/aOSd7mGt.png?2);
+    }
+    .o::after {
+        content: url(https://i.imgur.com/4EWIMBPt.jpg?3);
+    }
+    h1 {
+        font-size: 3em;
+    }
+    .reset {
+        font-size: .5em;
+        width: 100px;
+    }
+}
