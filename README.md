@@ -6,6 +6,8 @@
 
 Two players, one taco, one sushi take turns picking their spot on the board. The goal is whichever food can take three spots in a horizontal, vertical or diagnol row first is victorious!
 
+[You can play the game at this link here] (https://aclap427.github.io/TicTacToe-Game/)
+
 ---
 
 
